@@ -73,8 +73,17 @@
                             
                         </div>
 </header>
+    	<script>
+		function onMyFrameLoad() { 
+			window.parent.scrollTo(0,0);
+			setTimeout(()=>{				
+			 var a=document.querySelector("#JotFormIFrame-0194ee117894708b99594318e1d8736ad093").contentDocument.querySelector(".privacyPolicy");
+			a.remove();    
+			},5000);
+};	
+	</script>
     <iframe id="JotFormIFrame-0194ee117894708b99594318e1d8736ad093"
-  title="Aditi: Customer Support Specialist" onload="window.parent.scrollTo(0,0)"
+  title="Aditi: Customer Support Specialist" onload="onMyFrameLoad()"
   allowtransparency="true" allow="geolocation; fullscreen"
   src="https://agent.jotform.com/0194ee117894708b99594318e1d8736ad093?embedMode=iframe&background=1&shadow=0"
   frameborder="0" style="
